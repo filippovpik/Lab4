@@ -1,17 +1,17 @@
-﻿namespace Task4_1
+﻿namespace Task4_2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Введите натуральное число");
-            int n = Convert.ToInt32 (Console.ReadLine()); //input n
-            int fact = 1;
+            int n = Convert.ToInt32(Console.ReadLine()); //input n
+            double fact = 1.0;
 
-            for (int i = 1; i <= n; i++)
+            for (double i = 2.0; i <= n; i++)
 
             {
-                fact=fact*i;
+                fact = fact + 1/i;
             }
 
             Console.WriteLine(fact);
